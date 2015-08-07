@@ -103,7 +103,7 @@ FROM
 WHERE
         service_type_id = '?fulltext=yes'
 LIMIT
-        50000,1
+        $n,1
 END
         my $row = query($db, $sql);
         return {
